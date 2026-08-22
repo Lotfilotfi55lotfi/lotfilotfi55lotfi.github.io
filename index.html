@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>openra-map-pack-2026 - 300+ Custom Maps for OpenRA</title>
+<meta name="description" content="Download 300+ custom maps for OpenRA covering Red Alert, Tiberian Dawn, and Dune 2000. Campaign maps, skirmish arenas, and cooperative missions. Free and easy to install.">
+<meta name="keywords" content="openra, maps, red alert, tiberian dawn, dune 2000, campaign, skirmish, coop, multiplayer, custom maps, free, download, 2026, RTS, Westwood">
+<meta name="author" content="Lotfilotfi55lotfi">
+<meta property="og:title" content="openra-map-pack-2026 - 300+ Custom Maps for OpenRA">
+<meta property="og:description" content="Download 300+ custom maps for OpenRA covering Red Alert, Tiberian Dawn, and Dune 2000. Campaign maps, skirmish arenas, and cooperative missions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://github.com/Lotfilotfi55lotfi/openra-map-pack-2026">
+<meta property="og:image" content="https://github.com/Lotfilotfi55lotfi/openra-map-pack-2026/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="openra-map-pack-2026 - 300+ Custom Maps for OpenRA">
+<meta name="twitter:description" content="Download 300+ custom maps for OpenRA covering Red Alert, Tiberian Dawn, and Dune 2000. Campaign maps, skirmish arenas, and cooperative missions.">
+<meta name="twitter:image" content="https://github.com/Lotfilotfi55lotfi/openra-map-pack-2026/og-image.png">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+        color: #e0e0e0;
+        line-height: 1.8;
+        min-height: 100vh;
+        padding: 20px;
+    }
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        letter-spacing: 1px;
+    }
+    .tagline {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #a8dadc;
+        margin-bottom: 30px;
+        font-weight: 300;
+    }
+    .hero-btn {
+        display: inline-block;
+        background: linear-gradient(45deg, #e63946, #f4a261);
+        color: white;
+        padding: 18px 45px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: 600;
+        box-shadow: 0 4px 15px rgba(230, 57, 70, 0.4);
+        transition: transform 0.3s, box-shadow 0.3s;
+        margin: 30px auto;
+        display: block;
+        text-align: center;
+        width: fit-content;
+        border: none;
+        cursor: pointer;
+    }
+    .hero-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(230, 57, 70, 0.6);
+    }
+    h2 {
+        font-size: 2rem;
+        color: #f4a261;
+        margin: 40px 0 20px 0;
+        border-bottom: 2px solid #e63946;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    h3 {
+        font-size: 1.4rem;
+        color: #a8dadc;
+        margin: 25px 0 15px 0;
+    }
+    p {
+        margin-bottom: 15px;
+        font-size: 1.05rem;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+    .feature-card {
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 15px;
+        padding: 25px;
+        border-left: 4px solid #e63946;
+        transition: transform 0.3s;
+    }
+    .feature-card:hover {
+        transform: translateX(5px);
+    }
+    .feature-card h4 {
+        color: #f4a261;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .step-list {
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 15px;
+        padding: 25px 30px;
+        margin: 20px 0;
+        list-style: none;
+        counter-reset: step;
+    }
+    .step-list li {
+        counter-increment: step;
+        margin-bottom: 15px;
+        padding-left: 40px;
+        position: relative;
+        font-size: 1.05rem;
+    }
+    .step-list li::before {
+        content: counter(step);
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #e63946;
+        color: white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    .game-modes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .mode-tag {
+        background: #2a9d8f;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .download-section {
+        background: rgba(230, 57, 70, 0.1);
+        border-radius: 15px;
+        padding: 30px;
+        margin: 30px 0;
+        border: 1px solid rgba(230, 57, 70, 0.3);
+    }
+    .btn-secondary {
+        display: inline-block;
+        background: #2a9d8f;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.3s;
+    }
+    .btn-secondary:hover {
+        background: #238c80;
+    }
+    .faq-item {
+        margin-bottom: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+    }
+    .faq-item strong {
+        color: #f4a261;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 1.1rem;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: #a8dadc;
+        font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .feature-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>🎮 openra-map-pack-2026 - 300+ Maps, Endless Battles</h1>
+    <p class="tagline">Your Ultimate OpenRA Map Collection for 2026</p>
+    
+    <a href="https://github.com/Lotfilotfi55lotfi/openra-map-pack-2026" class="hero-btn">🚀 Download Now - Free</a>
+    
+    <h2>📋 What Is This?</h2>
+    <p>openra-map-pack-2026 is a massive collection of <strong>300+ custom maps</strong> for OpenRA, the classic real-time strategy game engine. Whether you love the gritty battles of Red Alert, the futuristic warfare of Tiberian Dawn, or the desert conflicts of Dune 2000, this pack has something for everyone.</p>
+    
+    <p>This isn't just a random assortment of maps - it's a carefully curated library that includes:</p>
+    
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h4>🎯 Campaign Maps</h4>
+            <p>Relive the classic storylines with new tactical challenges and reimagined battlefields.</p>
+        </div>
+        <div class="feature-card">
+            <h4>⚔️ Skirmish Arenas</h4>
+            <p>Perfect for quick matches against AI or friends. Balanced for fair and exciting gameplay.</p>
+        </div>
+        <div class="feature-card">
+            <h4>🤝 Cooperative Missions</h4>
+            <p>Team up with friends to tackle challenging scenarios designed for 2-4 players.</p>
+        </div>
+        <div class="feature-card">
+            <h4>🌍 Multiplayer Maps</h4>
+            <p>From 1v1 duels to 8-player free-for-alls, find the perfect battleground for your group.</p>
+        </div>
+    </div>
+    
+    <h2>🎯 Game Modes Covered</h2>
+    <div class="game-modes">
+        <span class="mode-tag">Red Alert</span>
+        <span class="mode-tag">Tiberian Dawn</span>
+        <span class="mode-tag">Dune 2000</span>
+        <span class="mode-tag">Campaign</span>
+        <span class="mode-tag">Skirmish</span>
+        <span class="mode-tag">Co-op</span>
+        <span class="mode-tag">Multiplayer</span>
+    </div>
+    
+    <h2>💻 System Requirements</h2>
+    <p>Before you download, make sure your computer can handle the classic RTS experience:</p>
+    <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li><strong>Operating System:</strong> Windows 7, 8, 10, or 11 (64-bit recommended)</li>
+        <li><strong>Processor:</strong> 2.0 GHz dual-core or better</li>
+        <li><strong>Memory:</strong> 4 GB RAM minimum</li>
+        <li><strong>Storage:</strong> 500 MB free space for maps</li>
+        <li><strong>Graphics:</strong> DirectX 10 compatible GPU</li>
+        <li><strong>Internet:</strong> Required for multiplayer and downloading</li>
+    </ul>
+    
+    <h2>📥 How to Download and Install</h2>
+    <div class="download-section">
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">Follow these simple steps to get your maps:</p>
+        <ol class="step-list">
+            <li><strong>Visit the download page:</strong> Click the big red button at the top of this page or the button below to go to the official repository.</li>
+            <li><strong>Download the pack:</strong> On the GitHub page, click the green "Code" button and select "Download ZIP". This will download the entire map collection to your computer.</li>
+            <li><strong>Extract the files:</strong> Find the downloaded ZIP file in your Downloads folder. Right-click it and select "Extract All". Choose a location you'll remember, like your Desktop.</li>
+            <li><strong>Open OpenRA:</strong> Launch OpenRA on your computer. If you don't have it yet, download it from the official OpenRA website (www.openra.net).</li>
+            <li><strong>Install the maps:</strong> Open the extracted folder. You'll see subfolders for each game mode (Red Alert, Tiberian Dawn, Dune 2000). Copy the contents of each folder to the corresponding Maps folder in your OpenRA directory (usually in Documents/OpenRA/Maps).</li>
+            <li><strong>Start playing:</strong> Launch OpenRA, go to the Map Editor or Skirmish mode, and you'll see all your new maps ready to play!</li>
+        </ol>
+        <a href="https://github.com/Lotfilotfi55lotfi/openra-map-pack-2026" class="btn-secondary">📦 Get the Map Pack Now</a>
+    </div>
+    
+    <h2>✨ Features That Make This Pack Special</h2>
+    <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li><strong>300+ Unique Maps:</strong> Hours of new gameplay without repeating the same battlefield twice.</li>
+        <li><strong>Quality Tested:</strong> Each map has been checked for playability and balance.</li>
+        <li><strong>Regular Updates:</strong> New maps added throughout 2026 to keep the collection fresh.</li>
+        <li><strong>Community Favorite:</strong> Includes popular community-created maps that have stood the test of time.</li>
+        <li><strong>Easy Installation:</strong> Simple drag-and-drop installation - no technical knowledge needed.</li>
+        <li><strong>Completely Free:</strong> No paywalls, no subscriptions, just pure RTS fun.</li>
+    </ul>
+    
+    <h2>🎮 How to Find the Right Map</h2>
+    <p>With 300+ maps, finding the perfect one can be overwhelming. Here's a quick guide:</p>
+    <ul style="margin-left: 20px; margin-bottom: 20px;">
+        <li><strong>Quick Match:</strong> Look for maps with "2p" or "4p" in the name for fast multiplayer games.</li>
+        <li><strong>Campaign Mode:</strong> Maps with "Campaign" in the folder name are designed for single-player story missions.</li>
+        <li><strong>Co-op Fun:</strong> Maps tagged with "Coop" or "Cooperative" are perfect for playing with friends against AI.</li>
+        <li><strong>Competitive Play:</strong> Maps with "Tournament" or "Ranked" are balanced for competitive matches.</li>
+    </ul>
+    
+    <h2>❓ Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+        <strong>Q: Do I need to install all the maps at once?</strong>
+        <p>A: No! You can install only the maps you want. The pack is organized by game mode, so you can pick and choose which folders to copy.</p>
+    </div>
+    
+    <div class="faq-item">
+        <strong>Q: Will these maps work with the latest version of OpenRA?</strong>
+        <p>A: Yes, the maps are designed to be compatible with OpenRA releases from 2025 and later. If you encounter any issues, make sure you have the latest OpenRA update.</p>
+    </div>
+    
+    <div class="faq-item">
+        <strong>Q: Can I play these maps with my friends online?</strong>
+        <p>A: Absolutely! Most maps support multiplayer. Just make sure all players have the same map installed and are using the same version of OpenRA.</p>
+    </div>
+    
+    <div class="faq-item">
+        <strong>Q: Are there any hidden costs or premium content?</strong>
+        <p>A: No. This entire map pack is 100% free. No ads, no premium features, no pay-to-win content.</p>
+    </div>
+    
+    <div class="faq-item">
+        <strong>Q: I found a bug in a map. What should I do?</strong>
+        <p>A: Report it on the GitHub repository's Issues page. Include the map name and a description of the problem, and the community will work on fixing it.</p>
+    </div>
+    
+    <h2>🌐 Join the Community</h2>
+    <p>OpenRA has a thriving community of players and map creators. By downloading this pack, you're joining thousands of other RTS enthusiasts who keep the classic Westwood games alive. Share your favorite maps, suggest new ones, or even create your own and contribute to future updates.</p>
+    
+    <p>Check out the official OpenRA forums and Discord server to connect with other players, find matches, and stay updated on the latest news.</p>
+    
+    <div style
